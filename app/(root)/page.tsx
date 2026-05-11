@@ -1,4 +1,3 @@
-import { Button } from "@/components/ui/button"
 import TradingViewWidget from "@/components/TradingViewWidget"
 import { HEATMAP_WIDGET_CONFIG, MARKET_DATA_WIDGET_CONFIG, MARKET_OVERVIEW_WIDGET_CONFIG, TOP_STORIES_WIDGET_CONFIG } from "@/lib/constants"
 import { auth } from "@/lib/betterAuth/auth"
@@ -20,7 +19,7 @@ const Home = async () => {
         <h1 className="text-3xl md:text-4xl font-bold text-white mb-2">
           Good Morning, <span className="text-yellow-500">{userName}</span>
         </h1>
-        <p className="text-gray-400">Here's what's happening in the markets today.</p>
+        <p className="text-gray-400">Here&apos;s what&apos;s happening in the markets today.</p>
       </div>
 
       <section className="grid w-full gap-8 md:gap-10 home-section">

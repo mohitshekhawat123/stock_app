@@ -63,10 +63,10 @@ const WatchlistButton = ({
           }
         }
         router.refresh();
-      } catch (error: any) {
+      } catch (error: unknown) {
         setAdded(!next); // Revert on error
         toast.error(next ? `Failed to add ${symbol}` : `Failed to remove ${symbol}`, {
-          description: error.message || "Please try again later"
+          description: error instanceof Error ? error.message : "Please try again later"
         });
       }
     });
